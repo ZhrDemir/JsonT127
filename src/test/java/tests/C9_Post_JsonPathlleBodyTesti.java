@@ -1,3 +1,5 @@
+package tests;
+
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import org.hamcrest.Matchers;
@@ -73,9 +75,5 @@ https://restful-booker.herokuapp.com/booking url'ine asagidaki body'ye sahip
 
 
     }
-
-
-
-
 
 }
