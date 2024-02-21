@@ -37,7 +37,7 @@ public class C11_Get_ExpectedDataOlusturma {
         expBody.put("userId",3);
         expBody.put("id",22);
         expBody.put("title","dolor sint quo a velit explicabo quia nam");
-        expBody.put("body","eos qui et ipsum ipsam suscipit aut\nsed omnis non odio\nexpedita earum mollitia molestiae aut atque rem suscipit\nnam impedit esse");
+        expBody.put("body","eos qui et ipsum ipsam suscipit autsed omnis non odio expedita earum mollitia molestiae aut atque rem suscipit\nnam impedit esse");
 
         //3-Request gönder response kaydet
 
