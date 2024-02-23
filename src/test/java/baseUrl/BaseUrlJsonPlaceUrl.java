@@ -6,13 +6,12 @@ import org.junit.Before;
 
 public class BaseUrlJsonPlaceUrl {
 
-    protected static RequestSpecification specJsonPlaceHolder;
+    protected RequestSpecification specJsonPlaceHolder;
 
     @Before
-    public void setup(){
-        specJsonPlaceHolder=new RequestSpecBuilder().
-                setBaseUri("https://jsonplaceholder.typicode.com").build();
-
+    public void setUP(){
+        specJsonPlaceHolder=new RequestSpecBuilder()
+                                                 .setBaseUri("https://jsonplaceholder.typicode.com")
+                                                 .build();
     }
-
 }

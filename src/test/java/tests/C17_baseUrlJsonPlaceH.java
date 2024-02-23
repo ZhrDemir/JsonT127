@@ -1,6 +1,5 @@
 package tests;
 
-import baseUrl.BaseUrlJsonPlaceUrl;
 import io.restassured.response.Response;
 import org.hamcrest.Matchers;
 import org.junit.Test;
