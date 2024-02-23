@@ -1,5 +1,6 @@
 package tests;
 
+import baseUrl.BaseUrlDummy;
 import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;

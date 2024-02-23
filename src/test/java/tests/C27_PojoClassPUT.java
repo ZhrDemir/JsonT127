@@ -5,6 +5,7 @@ import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import org.junit.Test;
 import pojos.PojoJsonPlaceHolder;
+import testData.JsonPlaceData;
 
 import static io.restassured.RestAssured.given;
 import static org.junit.Assert.assertEquals;
@@ -47,6 +48,10 @@ public class C27_PojoClassPUT extends BaseUrlJsonPlaceUrl {
                 .contentType(ContentType.JSON).when().body(reqBodyPojo).put("{pp1}/{pp2}");
 
         PojoJsonPlaceHolder resPojo = response.as(PojoJsonPlaceHolder.class);
+
+        assertEquals(JsonPlaceData.basariliSC,response.getStatusCode());
+        assertEquals(JsonPlaceData.contentType,response.getContentType());
+        assertEquals(JsonPlaceData.header,response.header("Connection"));
 
        assertEquals(expBodyPojo.getTitle(),reqBodyPojo.getTitle());
        assertEquals(expBodyPojo.getBody(),reqBodyPojo.getBody());

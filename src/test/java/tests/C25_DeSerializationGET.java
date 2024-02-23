@@ -1,5 +1,6 @@
 package tests;
 
+import baseUrl.BaseUrlDummy;
 import io.restassured.response.Response;
 import org.junit.Test;
 import testData.DummyData;
